@@ -1,0 +1,122 @@
+* {
+    box-sizing: border-box;
+    margin-inline: 0%;
+    margin-block: 0%;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+    background-color: rgb(68, 78, 93);
+    padding: 30px;
+    text-align: center;
+    color: white;
+    align-items: center;
+    height: 20vh;
+}
+
+
+
+header ul li {
+    display: inline;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    letter-spacing: 3rem;
+    text-transform: uppercase;
+    font-size: 5rem;
+    font-weight: 900;
+    padding: 0 0;
+    margin: 0 0;
+
+}
+
+header ul li:hover {
+    color: rgb(109, 149, 90);
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+    float: left;
+    width: 20%;
+    height: 70vh;
+    background: #ccc;
+    padding: 20px;
+    text-transform: uppercase;
+    text-align: right;
+    font-size: large;
+    font-weight: 600;
+    align-items: center;
+    
+}
+
+/* Style the list inside the menu */
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li a {
+    padding-right: 3rem;
+    text-decoration: none;
+    line-height: 4rem;
+    color: rgb(83, 111, 143);
+}
+
+nav ul li a:hover {
+    padding-right: 3rem;
+    text-decoration: none;
+    line-height: 4rem;
+    color: rgb(130, 163, 200);
+}
+
+article {
+    float: left;
+    padding: 20px;
+    width: 80%;
+    background-color: rgb(89, 96, 109);
+    height: 300px; /* only for demonstration, should be removed */
+    color: aliceblue;
+    height: 70vh;
+    text-align: justify;
+}
+
+article p {
+    margin: auto 4rem;
+    line-height: 2.5rem;
+    font-size: 20px;
+}
+
+article h1 {
+    padding-left: 2rem;
+    font-size: 30px;
+    margin: 3rem auto;
+}
+
+/* Clear floats after the columns */
+section::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Style the footer */
+footer {
+    background-color: rgb(68, 78, 93);
+    padding: 2.5%;
+    position: relative;
+    text-align: center;
+    
+    color: white;
+    height: 10vh;
+    font-size: 15px;
+
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+    nav, article {
+        width: 100%;
+        height: auto;
+    }
+}

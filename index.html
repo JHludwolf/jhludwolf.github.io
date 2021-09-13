@@ -2,60 +2,90 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Joe Hludwolf</title>
-        <link rel="stylesheet" href="./resources/css/index.css">
+        <title>Pagina Principal</title>
+        <link rel="stylesheet" href="./Style/index.css">
+        <!-- <link rel="stylesheet" href="./debug.css"> -->
     </head>
-    <body>
-        <!-- Navbar section-->
-        <nav class="navbar">
-            <ul>
-                <li>
-                    <a class="blue" href="">Joe Hludwolf</a>
-                </li>
-                <li>
-                    <a href="">Landing Banner</a>
-                </li>
-                <li>
-                    <a href="">Joe Twitter</a>
-                </li>
-            </ul>
-        </nav>
-        <!-- Banner Section -->
-        <div class="banner">
-            <h1>Joe Hludwolf</h1>
-            <img id="small-joe" src="./resources/images/0f03570eb526eb0b0ab8fb2d85bb4944-sticker.png" alt="">
-            <p>Artificial Inteligence Engineer Student</p>
-            <button>Contact me!</button>
-        </div>
+    <body class="home">
 
-        <!-- Joe Section -->
-        <div class="joe-section">
-            <span class="bold" id="name">Joe Hludwolf</span>
-            <p class="bold">Online portfolio to share some cool stuff I've made</p>
-            <form action="">
-                <input type="text">
-                <input type="submit" value="Submit">
-            </form>
-            <div id="greets">
-                <ul>
-                    <li>
-                        <div class="avatar"></div><span>Hello it's me again!</span>
+        <!-- HEADER -->
+        <header id="header">
+            <nav class="nav">
+                <div class="page-title">
+                    <a href="index.html">
+                        Desarrollo de Aplicaciones Web
+                    </a>
+                </div>
+
+                <!-- <div id="header-square"></div> -->
+
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Inicio</a>
                     </li>
-                    <li>
-                        <div class="avatar"></div><span>How are you today?</span>
+                    <li class="nav-item">
+                        <a href="#practicas" class="nav-link">Practicas</a>
                     </li>
-                    <li>
-                        <div class="avatar"></div><span>Did you excersise already?</span>
-                    </li>
-                    <li>
-                        <div class="avatar"></div><span>Byeeeee</span>
+                    <li class="nav-item">
+                        <a href="#contacto" class="nav-link">Contacto</a>
                     </li>
                 </ul>
-            </div>
-        </div>
-        
+            </nav>
+            
+        </header>
 
+        <!-- PORTADA -->
+        <article id="cover">
+            <div id="main-square"></div>
+            <h3 id="college" class="subtitle">Universidad Panamericana</h3>
+            <h2 id="title">José Luis <br>Lobera</h2>
+            <h4 id="semester" class="subtitle">Semestre Ago - Dic 2021</h4>
+        </article>
+
+        <!-- PRACTICAS -->
+        <article id="practicas">
+            <p id="sub-practicas">Actividades y Tareas</p>
+            <h2 id="practicas-title">Practicas</h2>
+            <ul id="list-practicas">
+                <li id="item-practicas"><a href="Practicas/practica01.html">Articulo Informativo</a></li>
+                <li id="item-practicas"><a href="Practicas/practica02.html">Formatos de Texto</a></li>
+                <li id="item-practicas"><a href="Practicas/practica03.html">Tipos de Listas</a></li>
+                <li id="item-practicas"><a href="Practicas/practica04.html">Tipos de Input</a></li>
+                <li id="item-practicas"><a href="Practicas/practica05.html">Tablas</a></li>
+                <li id="item-practicas"><a href="Practicas/practica06.html">Happy Face</a></li>
+                <li id="item-practicas"><a href="Practicas/practica07.html">Media Frames</a></li>
+                <li id="item-practicas"><a href="Practicas/practica08.html">Practica 8</a></li>
+                <li id="item-practicas"><a href="Practicas/practica09.html">Practica 9</a></li>
+                <li id="item-practicas"><a href="Practicas/practica10.html">Practica 10</a></li>
+                <li id="item-practicas"><a href="Practicas/practica11.html">Practica 11</a></li>
+                <li id="item-practicas"><a href="Practicas/practica12.html">Practica 12</a></li>
+            </ul>
+             
+        </article>
+
+        <div id="lighter-background">WEB DESIGN</div>
+        
+        <footer id="contacto">
+            <div id="contenedor-contacto">
+                <div id="social-media">
+                    <a href="https://github.com/JHludwolf" target=”_blank”><img id="social-media-logo" src="./Style/Resources/iconmonstr-github-1-240.png"  alt=""></a>
+                    <a href="https://www.instagram.com/j.hludwolf" target=”_blank”><img id="social-media-logo" src="./Style/Resources/iconmonstr-instagram-14-240.png" alt=""></a>
+                    <a href="mailto:0224643@up.edu.mx"><img id="social-media-logo" src="./Style/Resources/iconmonstr-email-10-240.png" alt=""></a>
+                </div>
+                <ul class="nav-list-footer">
+                    <li class="nav-item-footer">
+                        <a href="" class="nav-link">Inicio</a>
+                    </li>
+                    <li class="nav-item-footer">
+                        <a href="#practicas" class="nav-link">Practicas</a>
+                    </li>
+                    <li class="nav-item-footer">
+                        <a href="#contacto" class="nav-link">Contacto</a>
+                    </li>
+                </ul>
+                <a name="JLoko">Created by José Luis Lobera. © 2021</a>
+            </div>
+            
+        </footer>
     </body>
 </html>

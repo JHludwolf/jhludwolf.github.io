@@ -1,0 +1,282 @@
+/*
+José Luis Lobera del Castillo 0224643
+Desarrollo de Aplicaciones Web
+*/
+
+/* * {
+    border: 2px solid red;
+} */
+
+ /* GENERAL */
+
+* {
+    font-family: "Raleway", sans-serif;
+    user-select: none;
+    
+}
+
+body {
+    background: rgb(28, 31, 33);
+    height: 100vh;
+}
+
+p {
+    user-select: text;
+}
+
+/* INICIO */
+
+#cover {
+    margin: -8px -8px;
+    background: rgb(28, 31, 33);
+    background-size: cover;
+    background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0) 85%, rgb(28, 31, 33)), url("./Resources/mountains.jpg");
+    background-repeat: no-repeat;
+}
+
+#main-square {
+    height: 57rem;
+    width: 40vw;
+    position: absolute;
+    top: 0rem; /*4rem;*/
+    left: 60%;
+    box-shadow: 0 0 0rem 0 rgba(0, 0, 0, .2);
+    background-color: rgba(255, 255, 255, .15);
+    backdrop-filter: blur(5px);
+    z-index: 0;
+}
+
+#title {
+    background-image: url("./Resources/mountains.jpg");
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-position: right;
+    background-position-y: top;
+    background-repeat: repeat;
+    text-align: right;
+    background-size: 60rem;
+    text-transform: uppercase;
+    font-size: 200px;
+    font-family: Impact, "Segoe UI", Tahoma, sans-serif;
+    z-index: 5;
+    margin-top: 0.3em;
+    position: relative;
+    line-height: 0.90em;
+}
+
+.subtitle {
+    color: #2A3234;
+    text-align: right;
+    text-transform: uppercase;
+    z-index: 6;
+}
+
+#college {
+    position: relative;
+    top: 50px;
+}
+
+#semester {
+    position: relative;
+    top: -152px;
+}
+
+article {
+    padding: 8em 5em;
+}
+
+/* NAV BAR */
+
+.nav {
+    height: 5rem;
+    width: 100%;
+    display: block;
+    justify-content: flex-start;
+    z-index: 11;
+    font-weight: 300;
+    /* transition: 0.2s ease-in-out; */
+    position: fixed;
+    margin: -6px -50px;
+    padding-bottom: 1em;
+    color: aliceblue;
+}
+
+#header-square {
+    height: 4rem;
+    width: 60w;
+    position:fixed;
+    display: block;
+    top: 0;
+    left: 60%;
+    right: 0;
+    box-shadow: 0 0 0rem 0 rgba(0, 0, 0, .2);
+    background-color: rgba(255, 255, 255, .15);
+    backdrop-filter: blur(5px);
+    z-index: 10;
+}
+
+.nav-list {
+    list-style: none;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(3, minmax(0, 7em));
+    justify-content: flex-end;
+    margin-top: -4rem;
+    padding: 1rem 2.6rem;
+    text-align: right;
+    position: relative;
+    z-index: 11;
+}
+
+.nav-link {
+    color: inherit;
+    text-decoration: none;
+    position: relative;
+    letter-spacing: 2px;
+    line-height: 16px;
+    font-weight: 500;
+    /* transition: color 0.1s, background-color 0.1s, padding 0.2s ease-in; */
+}
+
+.nav-link:hover {
+    color: #2A3234;
+    font-weight: 900;
+}
+
+.page-title a {
+    text-decoration: none;
+    padding: 3vh 5vw;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    width: 30rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: large;
+    color: aliceblue;
+}
+
+/* PRACTICAS */
+#practicas {
+    /* height: 100vh; */
+}
+
+#practicas-title {
+    color: aliceblue;
+    font: 50px impact, "Segoe UI";
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 50;
+    letter-spacing: 1px;
+    margin-top: -0.3em;
+}
+
+#sub-practicas {
+    color: rgb(127, 132, 136);
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+#list-practicas {
+    list-style: none;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(4, minmax(0, 25vw));
+    grid-template-rows: repeat(3, minmax(8em, auto));
+    justify-content: center;
+    padding: 2rem 0;
+    text-align: center;
+    position: relative;
+}
+
+#item-practicas a {
+    color: aliceblue;
+    text-decoration: none;
+    text-transform: uppercase;
+    position: relative;
+    letter-spacing: 1px;
+    line-height: 16px;
+    font-weight: 500;
+}
+
+#item-practicas a:hover {
+    color: rgb(127, 132, 136);
+    font-weight: 900;
+    font-size: 101%;
+}
+
+/* BACKGROUND CHANGE */
+
+
+#lighter-background {
+    background-image:
+    linear-gradient(
+      to bottom,
+      rgba(28, 31, 33, 0) 11.5rem,
+      rgba(31, 34, 36, 100) 1%
+    );
+    /* border: 2px solid blue;  rgb(31, 34, 36)*/
+    width: 100vw;
+    height: 40%;
+    top: 160%;
+    position: absolute;
+    right: 0;
+    color: rgb(31, 34, 36);
+    font-size: max(200px, 200px);
+    text-align: center;
+    letter-spacing: 1rem;
+    display: inline;
+    z-index: -1;
+}
+
+/* FOOTER */
+#contacto {
+    color: aliceblue;
+    text-align: center;
+    align-items: center;
+    position: relative;
+    bottom: 14vh;
+}
+
+#contenedor-contacto {
+    padding: 0 0;
+    margin-left: -1em;
+    width: 100vw;
+    position: relative;
+}
+
+#social-media {
+    display: grid;
+    grid-template-columns: repeat(3, 3rem);
+    justify-content: center;
+    gap: 1rem;
+}
+
+#social-media-logo {
+    width: 100%;
+    height: auto;
+}
+
+#social-media-logo:hover {
+    filter: brightness(20%);
+}
+
+.nav-list-footer {
+    list-style: none;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(3, minmax(0, 8em));
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    z-index: 5;
+    margin-left: -2rem;
+    
+}
+
+#contacto p {
+    color: #AAAAAA;
+}
